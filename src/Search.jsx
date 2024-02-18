@@ -37,9 +37,9 @@ const SearchCompany = () => {
       </button>
       <div>
         {searchResult ? (
-          <p>Znaleziono firme: {searchResult}</p>
+          <p>Znaleziono firmę : {searchResult}</p>
         ) : (
-          <p className="result">Brak takiej firmy na liscie!</p>
+          <p className="result">Brak takiej firmy na liście!</p>
         )}
       </div>
     </div>
