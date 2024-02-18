@@ -16,6 +16,8 @@ const SearchCompany = () => {
 
     setSearchResult(result);
     const showResult = document.querySelector(".result");
+    const container = document.querySelector(".container");
+    container.style.display = "block";
     showResult.style.display = "block";
   };
 
@@ -36,7 +38,7 @@ const SearchCompany = () => {
       >
         Szukaj
       </button>
-      <div>
+      <div className="container">
         {searchResult ? (
           <p>Znaleziono firmę : {searchResult}</p>
         ) : (
@@ -55,7 +57,7 @@ const SearchCompany = () => {
       >
         <ul>
           {lists.map((list) => (
-            <li key={list}>{list}</li>
+            <li>{list}</li>
           ))}
         </ul>
       </div>
