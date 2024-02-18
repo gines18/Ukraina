@@ -20,7 +20,7 @@ const SearchCompany = () => {
 
   return (
     <div>
-      <h1>Lista firm importujących zboże z Ukrainy</h1>
+      <h1 className="title">Lista firm importujących zboże z Ukrainy</h1>
       <input
         className="search"
         type="text"
