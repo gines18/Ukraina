@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
+import lists from "./Data.jsx";
 // Assuming the list of companies is stored in a separate file named 'companies.js'
-import lists from "./Data.jsx"; // Make sure to replace './companies' with the correct path to your file
+// Make sure to replace './companies' with the correct path to your file
 
 const SearchCompany = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -41,6 +42,22 @@ const SearchCompany = () => {
         ) : (
           <p className="result">Brak takiej firmy na liście!</p>
         )}
+      </div>
+      <p>Lista wszystkich firm:</p>
+
+      <div
+        style={{
+          overflowY: "scroll",
+          maxHeight: "400px",
+          border: "1px solid #ccc",
+          padding: "10px",
+        }}
+      >
+        <ul>
+          {lists.map((list) => (
+            <li key={list}>{list}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
