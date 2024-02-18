@@ -67,7 +67,14 @@ button:focus-visible {
   }
 }
 
-input{
+input {
   height: 27px;
   margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 390px) {
+  input {
+    font-size: 0.8rem;
+  }
 }
