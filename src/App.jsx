@@ -1,11 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import SearchCompany  from './Search'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import SearchCompany from "./Search";
+import Contact from "./Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -18,12 +19,16 @@ function App() {
         </a>
       </div> */}
       <p className="read-the-docs">
-        <a href="https://www.gov.pl/web/rolnictwo/lista-firm-importujacych-zboze-z-ukrainy" target="_blank"></a>
+        <a
+          href="https://www.gov.pl/web/rolnictwo/lista-firm-importujacych-zboze-z-ukrainy"
+          target="_blank"
+        ></a>
         Ministerstwo Rolnictwa i Rozwoju Wsi
       </p>
       <SearchCompany />
+      <Contact />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
