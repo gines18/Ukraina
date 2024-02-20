@@ -22,46 +22,48 @@ const SearchCompany = () => {
   };
 
   return (
-    <div>
-      <h1 className="title">Lista firm importujących zboże z Ukrainy</h1>
-      <input
-        className="search"
-        type="text"
-        placeholder="Wpisz nazwe firmy..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <button
-        className="search-button"
-        onClick={handleSearch}
-        disabled={!searchTerm}
-      >
-        Szukaj
-      </button>
-      <div className="container">
-        {searchResult ? (
-          <p>Znaleziono firmę : {searchResult}</p>
-        ) : (
-          <p className="result">Brak takiej firmy na liście!</p>
-        )}
-      </div>
-      <p>Lista wszystkich firm:</p>
+    <>
+      <div>
+        <h1 className="title">Lista firm importujących zboże z Ukrainy</h1>
+        <input
+          className="search"
+          type="text"
+          placeholder="Wpisz nazwę firmy..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <button
+          className="search-button"
+          onClick={handleSearch}
+          disabled={!searchTerm}
+        >
+          Szukaj
+        </button>
+        <div className="container">
+          {searchResult ? (
+            <p>Znaleziono firmę : {searchResult}</p>
+          ) : (
+            <p className="result">Brak takiej firmy na liście!</p>
+          )}
+        </div>
+        <p className="frame">Lista wszystkich firm:</p>
 
-      <div
-        style={{
-          overflowY: "scroll",
-          maxHeight: "400px",
-          border: "1px solid #ccc",
-          padding: "10px",
-        }}
-      >
-        <ul>
-          {lists.map((list) => (
-            <li>{list}</li>
-          ))}
-        </ul>
+        <div
+          style={{
+            overflowY: "scroll",
+            maxHeight: "400px",
+            border: "1px solid #ccc",
+            padding: "10px",
+          }}
+        >
+          <ul>
+            {lists.map((list) => (
+              <li>{list}</li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
