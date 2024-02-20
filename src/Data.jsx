@@ -1,4 +1,5 @@
 const lists = [
+  "Komagra Sp. z o.o. +52 302 40 03",
   "Młyn Pogorzelec Sp. z o.o.",
   "4BAGS NATALIA WEDRAL",
   "AB LINAS AGRO",
