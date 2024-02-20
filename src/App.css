@@ -13,6 +13,7 @@
 
   .title {
     font-size: 1.2rem;
+    margin-top: 60px;
   }
 }
 
@@ -33,4 +34,8 @@
   padding: 5px;
   border-radius: 5px;
   margin-top: 20px;
+}
+
+.frame {
+  margin-top: 40px;
 }
