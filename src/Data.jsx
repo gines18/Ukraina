@@ -1,7 +1,7 @@
 const lists = [
   "4BAGS NATALIA WEDRAL",
   "A.T GROUP Sp.z o.o.",
-  "AB LINAS AGRO; (Smelynes 2c, PANEVEZYS(Poniewież) 35143, LT)",
+  "AB LINAS AGRO; (Smelynes 2c, PANEVEZYS 35143, LT)",
   "ADAM KLOC FHU; (Genowefa 37a, 62 - 513 KRZYMÓW, PL)",
   "AGENCJA OCHRONY VIP GUARD Sp.z o.o.",
   "AGERONA Sp.z o.o.",

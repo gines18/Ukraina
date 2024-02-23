@@ -10,7 +10,7 @@ const SearchCompany = () => {
 
   const handleSearch = () => {
     // Search for the company in the list
-    const result = lists.find((list) =>
+    const result = lists.filter((list) =>
       list.toLowerCase().includes(searchTerm.toLowerCase()),
     );
 
@@ -40,12 +40,20 @@ const SearchCompany = () => {
           Szukaj
         </button>
         <div className="container">
-          {searchResult ? (
-            <p>Znaleziono firmę : {searchResult}</p>
+          {searchResult && searchResult.length > 0 ? (
+            <div>
+              <p>Znaleziono firmę:</p>
+              <ul>
+                {searchResult.map((company, index) => (
+                  <li key={index}>{company}</li>
+                ))}
+              </ul>
+            </div>
           ) : (
             <p className="result">Brak takiej firmy na liście!</p>
           )}
         </div>
+
         <p className="frame">Lista wszystkich firm:</p>
 
         <div className="result-table">
