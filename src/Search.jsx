@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
 import lists from "./Data.jsx";
+import moment from "moment";
 // Assuming the list of companies is stored in a separate file named 'companies.js'
 // Make sure to replace './companies' with the correct path to your file
 
 const SearchCompany = () => {
+  const currentDate = new Date();
+
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResult, setSearchResult] = useState(null);
 
@@ -63,6 +66,10 @@ const SearchCompany = () => {
             ))}
           </ul>
         </div>
+      </div>
+      <div>
+        Aktualizacja:{" "}
+        <span className="date">{moment().format("DD. MM. YYYY")}</span>
       </div>
     </>
   );
