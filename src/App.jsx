@@ -22,8 +22,10 @@ function App() {
         <a
           href="https://www.gov.pl/web/rolnictwo/lista-firm-importujacych-zboze-z-ukrainy"
           target="_blank"
-        ></a>
-        Ministerstwo Rolnictwa i Rozwoju Wsi
+        >
+          {" "}
+          Źródło - Ministerstwo Rolnictwa i Rozwoju Wsi
+        </a>
       </p>
       <SearchCompany />
       <Contact />
