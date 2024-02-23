@@ -67,9 +67,12 @@ const SearchCompany = () => {
           </ul>
         </div>
       </div>
-      <div>
-        Aktualizacja:{" "}
-        <span className="date">{moment().format("DD. MM. YYYY")}</span>
+      <div style={{ marginTop: "20px" }}>
+        Aktualizacja listy:{" "}
+        <div>
+          {" "}
+          <span className="date">{moment().format("DD.MM.YYYY")}</span>
+        </div>
       </div>
     </>
   );
