@@ -48,14 +48,7 @@ const SearchCompany = () => {
         </div>
         <p className="frame">Lista wszystkich firm:</p>
 
-        <div
-          style={{
-            overflowY: "scroll",
-            maxHeight: "400px",
-            border: "1px solid #ccc",
-            padding: "10px",
-          }}
-        >
+        <div className="result-table">
           <ul>
             {lists.map((list) => (
               <li>{list}</li>
