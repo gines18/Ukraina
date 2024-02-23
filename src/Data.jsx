@@ -118,7 +118,7 @@ const lists = [
 "FHU KALINOWSKI Tomasz Kalinowski",
 "FHU KARP JACEK; (Dąbrowa 1c, 97 - 217 LUBOCHNIA, PL)",
 "FHU OL - WI; (ZA JEZIOREM 13, Sławno 62 - 265, PL)",
-"Firma " ZWIREK", Nowa Wieś Zbaska 61, 64 - 360 Zbąszyń, Polska",
+"Firma "ZWIREK", Nowa Wieś Zbaska 61, 64 - 360 Zbąszyń, Polska",
 "Firma EMIMAR Krystyna Oponowicz; (Wagowa 68 / 21, 41 - 215 SOSNOWIEC, PL)",
 "FIRMA HANDLOWA RAFAŁ KARP",
 "FIRMA PRODREW, KRZYSZTOF TOMASZ, KOPERNIKA 25A, 14 - 310 Miłakowo, Polska",
@@ -330,5 +330,3 @@ const lists = [
 "Zioła Nałęczowskie Sp.z o.o.",
 "ZŁOTE ZIARNO Sp.z o.o.; (Wspólna 70, 00 - 687 WARSZAWA, PL)",
 ]
-
-export default lists
