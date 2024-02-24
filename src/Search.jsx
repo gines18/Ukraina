@@ -26,7 +26,7 @@ const SearchCompany = () => {
 
   return (
     <>
-      <div>
+      <div className="App">
         <h1 className="title">Lista firm importujących zboże z Ukrainy</h1>
         <input
           className="search"
@@ -65,13 +65,9 @@ const SearchCompany = () => {
               <li>{list}</li>
             ))}
           </ul>
-        </div>
-      </div>
-      <div style={{ marginTop: "20px" }}>
-        Aktualizacja listy:{" "}
-        <div>
-          {" "}
-          <span className="date">{moment().format("DD.MM.YYYY")}</span>
+          <div className="date">
+            Aktualizacja listy: <span>{moment().format("DD.MM.YYYY")}</span>
+          </div>
         </div>
       </div>
     </>
