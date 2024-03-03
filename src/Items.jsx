@@ -54,6 +54,11 @@ const uaproducts = [
     imgUrl2: "./jagody2.png",
     title: "Jagody mrożone z Lidla",
   },
+  {
+    imgUrl: "./kasza.jpeg",
+    imgUrl2: "./kasza1.jpeg",
+    title: "Kasza gryczana prażona z Dino",
+  },
 ];
 
 export default uaproducts;
